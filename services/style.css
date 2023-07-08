@@ -1,0 +1,242 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Space+Grotesk:wght@500&display=swap");
+
+/* variable definition */
+:root {
+  --font-family: "roboto", sans-serif;
+  --accent: #43d2ff;
+  --neutral-dark: #292e47;
+  --neutral-light: #f4f6fc;
+  --neutral-light-blue: #e7f4fc;
+  --neutral-medium: #6b708d;
+  --primary: #072ac8;
+  --primary-hover: #a2d6f9;
+  --primary-tapped: #d1edff;
+  --yellow: #ffc600;
+  --white: #ffffff;
+}
+
+/* remove all default page margin and border */
+
+
+
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+    width: 100%;
+    /* height: 4400px; */
+    font-family: var(--font-family);
+    background: var(--neutral-light);
+    overflow-x: hidden;
+  }
+  
+  /* To target both header and footer ul */
+  ul {
+    display: flex;
+  }
+  
+  /* Target li of ul of both header and footer */
+  ul li {
+    /* remove the default dot styling */
+    list-style: none;
+  }
+  
+  /* Target all anchor tags */
+  a {
+    /* remove the default underline of an anchor text */
+    text-decoration: none;
+    /*  */
+    color: var(--neutral-medium);
+    font-family: var(--font-family);
+  }
+  
+  /* add hover effect */
+  a:hover {
+    color: var(--primary);
+  }
+  
+  /* add active state this is responsible for the click effect */
+  a:focus {
+    color: var(--primary-tapped);
+  }
+  
+  /* style all buttons */
+  button {
+    border: none;
+    background-color: var(--primary);
+    color: var(--white);
+    font-family: var(--font-family);
+  }
+  
+  button:hover {
+    background-color: var(--primary-hover);
+  }
+  
+  button:focus {
+    background-color: var(--primary-tapped);
+  }
+  
+  /* style all "learn more" anchor tag */
+  .learn-more {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--primary);
+  }
+  
+  .learn-more:hover {
+    color: var(--primary-hover);
+  }
+  
+  .learn-more:focus {
+    color: var(--primary-tapped);
+  }
+  
+  /* ......................... */
+  /* style/align the header/nav bar */
+  nav {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 170px 0px 170px;
+  }
+  
+  .nav-list {
+    /* add spacing between the navigaton lists */
+    gap: 80px;
+    font-size: 17px;
+  }
+  
+  #contact {
+    width: 160px;
+    padding: 15px 36px;
+    font-size: 17px;
+  }
+
+
+
+
+
+/**.................................................................*/
+form {
+    padding: 0 170px;
+    margin-top: 140px;
+    /* border: 1px solid red; */
+  }
+  
+  .form-header {
+    margin-bottom: 80px;
+    color: var(--neutral-dark);
+    font-size: 60px;
+    font-weight: 700;
+  }
+  
+  .form-label {
+    display: block;
+    margin: 20px 0;
+    color: var(--neutral-medium);
+  }
+  
+  ::placeholder {
+    color: var(--neutral-medium);
+  }
+  
+  .form-input {
+    width: calc(100% - 60px);
+    height: 70px;
+    padding: 0 30px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    color: var(--neutral-dark);
+    font-size: 17px;
+    font-weight: 400;
+    background: rgba(107, 112, 141, 0.1);
+  }
+  
+  .form-input:hover {
+    outline: 2.5px solid var(--accent);
+  }
+  
+  .form-input:focus {
+    outline: 2.5px solid var(--accent);
+  }
+  
+  .email-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .email {
+    width: 48%;
+  }
+  
+  .phone {
+    width: 48%;
+  }
+  
+  #message {
+    height: 170px;
+    padding: 30px;
+    font-family: var(--font-family);
+  }
+  
+  #submit {
+    width: 100%;
+    padding: 15px 37px;
+    height: 80px;
+    margin-top: 60px;
+    font-size: 17px;
+  }
+
+  /*...........................................................................*/
+
+  /* styling for footer */
+footer {
+    margin-top: 180px;
+    padding: 30px 170px 100px 170px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* border: 1px solid red; */
+  }
+  
+  .logo-area {
+    /* border: 1px solid red; */
+    width: 50%;
+  }
+  
+  .footer-logo {
+    width: 98.381px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .circle-address {
+    margin-top: 10px;
+    color: var(--neutral-medium);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 150%;
+    width: 60%;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 65px;
+    /* border: 1px solid red; */
+    width: 50%;
+  }
+  
+  .footer-links {
+    width: 35%;
+  }
+  
