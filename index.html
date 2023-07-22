@@ -13,20 +13,19 @@
 <body>
     <header>
         <nav id="parent-header">
-            <a href="./homepage.html"><img src="./assests/Logo.svg" alt="circle" class="logo"></a>
+            <div id="logo">
+                <a href="./index.html"><img src="./assests/Logo.svg" alt="circle" class="logo"></a>
+            </div>
 
-            <ul class="nav-list">
-                <a href="./homepage.html">
+            <div id="mobile" class="mobile">
+                <ul class="nav-list">
                     <li id="home" class="list"><a href="./index.html">Home</a></li>
-                </a>
-                <a href="#project-section">
                     <li id="projects" class="list"><a href="./projects/index.html">Projects</a></li>
-                </a>
-                <a href="#services-section">
-                    <li id="services" class="list"><a href="./services/index.html">Services</a></li>
-                </a>
-            </ul>
-            <a href="../services/index.html"><button id="contact">Contact Us</button></a>
+                    <li id="services" class="list"><a href="#services-section">Services</a></li>
+                </ul>
+                <a href="../contact/index.html"><button id="contact">Contact Us</button></a>
+            </div>
+            <img src="../assests/hamburger.png" alt="" class="hamburger mobile">
         </nav>
     </header>
 
@@ -34,6 +33,11 @@
         <section id="hero-section">
 
             <!--hero section begins-->
+            <div class="mobile hero-1">
+                <img src="./assests/card-1.png" alt="" id="card-1">
+                <img src="./assests/card-2.png" alt="" id="card-2">
+                <img src="./assests/hero-image.png" alt="image of a person" id="hero-image">
+            </div>
 
             <div class="empower-section">
                 <h1 class="empower-heading">Empower Your Business With Stunning Design!</h1>
@@ -46,8 +50,8 @@
                 <span><a href="#project-section" class="our-work">See our work</a></span>
             </div>
 
-            <div>
-                <img src="./assests/card-1.png" alt="" id="card-1">
+            <div class="desktop hero-1">
+                <img src="./assests/card-1.png" alt="" id="card-1" >
                 <img src="./assests/card-2.png" alt="" id="card-2">
                 <img src="./assests/hero-image.png" alt="image of a person" id="hero-image">
             </div>
@@ -135,13 +139,12 @@
         <section id="services-section">
             <h2 class="services-heading">Our Services</h2>
 
-
             <!--UI Design-->
             <div class="services-container">
                 <div class="service-card" id="ui-design">
                     <div class="img-background"><img src="./assests/icons/1.svg" alt="" class="services-icon"></div>
-                    <h3>User Interface Design</h3>
-                    <p>
+                    <h3 class="service-title">User Interface Design</h3>
+                    <p class="service-text">
                         Circle provides you with a stunning user interface design that is
                         accessible to everyone.
                     </p>
